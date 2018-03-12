@@ -8,6 +8,8 @@ parsed by another program.
 import argparse
 import random
 import string
+import sys
+
 
 DEFAULT_FILE_LENGTH = 4096
 
@@ -20,6 +22,9 @@ def parse_args():
     parser.add_argument('--length',
                         default=DEFAULT_FILE_LENGTH,
                         help='Lenght of the file')
+    parser.add_argument('--print-chars',
+                        action='store_true',
+                        help='Print all characters used and exit')
     args = parser.parse_args()
     return args
 
@@ -40,6 +45,9 @@ def generate_random_characters():
 def main():
     """Main"""
     args = parse_args()
+    if args.print_chars:
+        print(get_character_list())
+        sys.exit()
     file_length = int(args.length)
     random_chars = generate_random_characters()
     with open(args.output, 'wb') as fil:
