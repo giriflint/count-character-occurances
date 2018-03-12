@@ -17,3 +17,6 @@ You can generate a test file by doing: `./generate_test_file.py -o output.txt`
 
 If it helps, you can also output all the characters used to generate the random
 files by doing: `./generate_test_file.py --print-chars`
+
+## Submitting Solutions
+When finished, please submit your solution as a forked repository.
