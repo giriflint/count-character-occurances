@@ -3,9 +3,9 @@ Hello!
 
 We'd like you to write a small executable in C that:
 
-    * Reads in a filepath as a command line argument
-    * Counts the number of instances of each character
-    * Prints the number of instances to stdout
+    * Takes in a filepath as a command line argument
+    * Counts the number of instances of each character in that file
+    * Prints the number of instances of each character to stdout
 
 In addition:
 
