@@ -9,7 +9,8 @@ We'd like you to write a small executable in C that:
 
 In addition:
 
-    * Some sort of build script/makefile/etc to build your C executable
+    * Please include any build scripts/makefiles/etc used to build your C
+      executable
     * Please include a `-h` option, for sanity
 
 You can generate a test file by doing: `./generate_test_file.py -o output.txt`
